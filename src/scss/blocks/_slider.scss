@@ -1,0 +1,44 @@
+.slider{
+    background-color: #fcfcfc; 
+    overflow: hidden;
+    z-index: 2;
+    min-height: 1150px;
+
+    &__caption{
+        color: $c-caption;
+        font-size: 60px;
+        font-weight: 900;   
+    }
+    &__description{
+        font-family: 'Lato';
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 1.85;
+    }
+    &__button{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        text-transform: uppercase;
+        border: 1px solid #444;
+        background-color: transparent;
+        display: block;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    &__img{
+        display: block;
+        bottom: 0;
+        left: 60%;
+        z-index: 1;
+    }
+    &__ring{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 64%;
+
+    }
+}
