@@ -8,6 +8,7 @@
         font-weight: 900; 
         letter-spacing: -1.8px;
         margin-bottom: 70px;  
+        padding-left: 3px;
     }
     &__description{
         font-family: 'Lato';
@@ -62,5 +63,9 @@
         margin-top: 490px;
         z-index: 3;
         margin-bottom: 312px;
+        max-width: 750px;
+    }
+    &__semiwrap{
+        max-width: 750px;
     }
 }

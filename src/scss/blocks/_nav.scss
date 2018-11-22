@@ -1,0 +1,33 @@
+.nav{
+    background-color: #2a2a2a;
+    &__list{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    &__text{
+        color: white;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.7;
+        text-transform: uppercase;
+        transition:  .3s ease-in-out color;
+    }
+    &__link{
+        padding: 28px 30px 28px 30px ;
+        display: block;
+        text-decoration: none;
+        &:hover{
+            text-decoration: none;
+            span{
+                color: $c-primary;
+            }
+        }
+    }
+}
+
+.logo{
+    margin-right: 112px;
+}

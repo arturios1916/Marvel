@@ -4,8 +4,10 @@ $(document).ready(function(){
     $('.slider__wrapper').slick({
      dots: true,
      accessibility: false,
-     autoplay: false,
+     autoplay: true,
      arrows: false,
      draggable: false,
+     touchMove: false,
+     infinite: false,
     });
   });

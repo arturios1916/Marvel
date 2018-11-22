@@ -7361,14 +7361,14 @@ a.text-dark:hover, a.text-dark:focus {
       opacity: 1; }
   .slick-prev.slick-disabled:before,
   .slick-next.slick-disabled:before {
-    opacity: 0.25; }
+    opacity: 0; }
   .slick-prev:before,
   .slick-next:before {
     font-family: "slick";
     font-size: 20px;
     line-height: 1;
     color: white;
-    opacity: 0.75;
+    opacity: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
 
@@ -7435,6 +7435,8 @@ a.text-dark:hover, a.text-dark:focus {
         position: absolute;
         top: 0;
         left: 0;
+        content: '';
+        background-color: #444;
         width: 22px;
         height: 4px;
         font-family: "slick";
@@ -7442,12 +7444,12 @@ a.text-dark:hover, a.text-dark:focus {
         line-height: 20px;
         text-align: center;
         color: black;
-        opacity: 0.25;
+        opacity: 0;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale; }
     .slick-dots li.slick-active button:before {
       color: black;
-      opacity: 0.75; }
+      opacity: 1; }
 
 .slider {
   background-color: #fcfcfc;
@@ -7458,7 +7460,8 @@ a.text-dark:hover, a.text-dark:focus {
     font-size: 60px;
     font-weight: 900;
     letter-spacing: -1.8px;
-    margin-bottom: 70px; }
+    margin-bottom: 70px;
+    padding-left: 3px; }
   .slider__description {
     font-family: 'Lato';
     font-size: 13px;
@@ -7503,7 +7506,39 @@ a.text-dark:hover, a.text-dark:focus {
   .slider__wrapper {
     margin-top: 490px;
     z-index: 3;
-    margin-bottom: 312px; }
+    margin-bottom: 312px;
+    max-width: 750px; }
+  .slider__semiwrap {
+    max-width: 750px; }
+
+.nav {
+  background-color: #2a2a2a; }
+  .nav__list {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .nav__text {
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.7;
+    text-transform: uppercase;
+    -webkit-transition: .3s ease-in-out color;
+    -o-transition: .3s ease-in-out color;
+    transition: .3s ease-in-out color; }
+  .nav__link {
+    padding: 28px 30px 28px 30px;
+    display: block;
+    text-decoration: none; }
+    .nav__link:hover {
+      text-decoration: none; }
+      .nav__link:hover span {
+        color: #ffe400; }
+
+.logo {
+  margin-right: 112px; }
 
 * {
   -webkit-box-sizing: border-box;
