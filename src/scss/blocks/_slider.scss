@@ -2,7 +2,6 @@
     background-color: #fcfcfc; 
     overflow: hidden;
     z-index: 2;
-
     &__caption{
         color: $c-caption;
         font-size: 60px;
@@ -30,22 +29,38 @@
         padding-left: 35px;
         padding-right: 35px;
         margin-top: 16px;
+        margin-bottom: 25px;
     }
     &__img{
         display: block;
         bottom: 0;
-        left: 63%;
+        left: 66%;
         z-index: 1;
     }
     &__ring{
         display: block;
         position: absolute;
-        top: 0;
-        left: 68%;
+        top: 49px;
+        left: 74.5%;
 
+    }
+    &__smallring{
+        position: absolute;
+        bottom: 157px;
+        right: 308px;
+        width: 198px;
+        height: auto;
+    }
+    &__circle{
+        position: absolute;
+        display: block;
+        left: -25px;
+        top: 470px;
+        
     }
     &__wrapper{
         margin-top: 490px;
         z-index: 3;
+        margin-bottom: 312px;
     }
 }
