@@ -12,3 +12,18 @@ $(document).ready(function(){
      fade: true,
     });
   });
+
+var currentMap = 0;
+$('.map__captionwrap').click(function(){
+  if (currentMap === 0) {
+    $('.map').css('height','400px');
+    $(this).css('height','50px');
+    currentMap = 1;
+  }
+  else {
+    $('.map').css('height','170px');
+    $(this).css('height','100%')
+    currentMap = 0;
+  }
+
+})

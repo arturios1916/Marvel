@@ -7544,7 +7544,8 @@ a.text-dark:hover, a.text-dark:focus {
     height: auto; }
 
 .polo {
-  font-family: 'Montserrat'; }
+  font-family: 'Montserrat';
+  overflow: hidden; }
   .polo__caption {
     color: #444;
     text-transform: uppercase;
@@ -7580,19 +7581,28 @@ a.text-dark:hover, a.text-dark:focus {
     letter-spacing: 0.3px;
     font-weight: 300;
     text-align: center;
-    margin-bottom: 64px; }
+    margin-bottom: 69px; }
   .polo__button {
     min-width: 226px;
     margin-right: 12px;
     margin-left: 12px;
     font-size: 18px;
     font-weight: 400;
-    line-height: 1.33;
+    line-height: 1;
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: black;
     border: 1px solid #a6a6a6;
-    color: #ffe400; }
+    color: #ffe400;
+    -webkit-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer; }
+    .polo__button:hover {
+      background-color: #ffe400;
+      color: black; }
+  .polo__buttonwrap {
+    padding-left: 10px; }
   .polo__cardwrap {
     min-height: 400px;
     background-color: #212121;
@@ -7600,14 +7610,15 @@ a.text-dark:hover, a.text-dark:focus {
     color: white;
     text-align: center;
     overflow: hidden;
-    margin-top: 80px;
-    border: 1px solid #aaa; }
+    margin-top: 86px;
+    border: 1px solid #aaa;
+    z-index: 2; }
     .polo__cardwrap:hover {
       background-color: #ffe400; }
       .polo__cardwrap:hover div {
         top: 50%; }
       .polo__cardwrap:hover h2 {
-        bottom: 50%; }
+        bottom: 43%; }
       .polo__cardwrap:hover svg {
         fill: white;
         top: 25%; }
@@ -7629,6 +7640,8 @@ a.text-dark:hover, a.text-dark:focus {
     position: absolute;
     max-width: 100%;
     width: 100%;
+    margin: 0;
+    letter-spacing: -0.3px;
     left: 50%;
     bottom: 120px;
     -webkit-transform: translate(-50%, 0);
@@ -7642,7 +7655,7 @@ a.text-dark:hover, a.text-dark:focus {
     height: auto;
     fill: #ffe400;
     position: absolute;
-    top: 40%;
+    top: 36.5%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -7651,11 +7664,14 @@ a.text-dark:hover, a.text-dark:focus {
     -o-transition: .3s ease-in-out;
     transition: .3s ease-in-out; }
   .polo__carddesc {
-    padding-top: 40px;
+    padding-top: 55px;
+    margin-left: 21.5px;
     display: block;
-    line-height: 1.9;
     z-index: 2;
-    position: absolute; }
+    position: absolute;
+    max-width: 320px;
+    letter-spacing: -0.5px;
+    line-height: 1.7; }
   .polo__smallring {
     width: 220px;
     height: auto;
@@ -7665,6 +7681,64 @@ a.text-dark:hover, a.text-dark:focus {
     -webkit-transition: .8s ease-in-out;
     -o-transition: .8s ease-in-out;
     transition: .8s ease-in-out; }
+  .polo__ring {
+    width: 1027px;
+    height: auto;
+    top: 13%;
+    left: -77.5%; }
+  .polo__subcaption {
+    font-family: 'Montserrat';
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.33;
+    z-index: 2;
+    margin-top: 180px; }
+  .polo__review {
+    width: 100%;
+    margin-bottom: 150px; }
+  .polo__review-item {
+    margin-top: 95px;
+    -webkit-transition: .2s ease-in-out transform;
+    -o-transition: .2s ease-in-out transform;
+    transition: .2s ease-in-out transform; }
+    .polo__review-item:hover {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1); }
+  .polo__review-num {
+    color: #444;
+    line-height: 1.25;
+    font-size: 47px;
+    font-weight: 700;
+    z-index: 2; }
+  .polo__review-desc {
+    font-size: 12px; }
+  .polo__img {
+    bottom: 19.5%;
+    right: -42.5%; }
+
+.map {
+  height: 170px; }
+  .map__item {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out; }
+  .map__captionwrap {
+    z-index: 2;
+    height: 100%;
+    background-color: rgba(255, 228, 0, 0.8);
+    position: absolute;
+    width: 100%;
+    -webkit-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out; }
+  .map__arrow {
+    width: 20px;
+    height: auto;
+    fill: black; }
 
 * {
   -webkit-box-sizing: border-box;

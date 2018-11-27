@@ -1,5 +1,6 @@
 .polo{
     font-family: 'Montserrat';
+    overflow: hidden;
     &__caption{
         color: $c-caption;
         text-transform: uppercase;
@@ -36,7 +37,7 @@
         letter-spacing: 0.3px;
         font-weight: 300;
         text-align: center;
-        margin-bottom: 64px;
+        margin-bottom: 69px;
     }
     &__button{
         min-width: 226px;
@@ -44,12 +45,21 @@
         margin-left: 12px;
         font-size: 18px;
         font-weight: 400;
-        line-height: 1.33;
+        line-height: 1;
         padding-top: 20px;
         padding-bottom: 20px;
         background-color: black;
         border: 1px solid #a6a6a6;
         color: $c-primary;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+        &:hover{
+            background-color: $c-primary;
+            color: black;
+        }
+    }
+    &__buttonwrap{
+        padding-left: 10px;
     }
     &__cardwrap{
         min-height: 400px;
@@ -58,15 +68,16 @@
         color: white;
         text-align: center;
         overflow: hidden;
-        margin-top: 80px;
+        margin-top: 86px;
         border: 1px solid #aaa;
+        z-index: 2;
         &:hover{
             background-color: $c-primary;
             div{
                 top:50%;
             }
             h2{
-                bottom: 50%;
+                bottom: 43%
             }
             svg{
                 fill: white;
@@ -92,6 +103,8 @@
         position: absolute;
         max-width: 100%;
         width: 100%;
+        margin: 0;
+        letter-spacing: -0.3px;
         left: 50%;
         bottom: 120px;
         transform: translate(-50%, 0);
@@ -102,17 +115,20 @@
         height: auto;
         fill: $c-primary;
         position: absolute;
-        top: 40%;
+        top: 36.5%;
         left: 50%;
         transform: translate(-50%, -50%);
         transition: .3s ease-in-out;
     }
     &__carddesc{
-        padding-top: 40px;
+        padding-top: 55px;
+        margin-left: 21.5px;
         display: block;
-        line-height: 1.9;
         z-index: 2;
         position: absolute;
+        max-width: 320px;
+        letter-spacing: -0.5px;
+        line-height: 1.7;
     }
     &__smallring{
         width: 220px;
@@ -121,5 +137,45 @@
         top: 200%;
         right: -60%;
         transition: .8s ease-in-out;
+    }
+    &__ring{
+        width: 1027px;
+        height: auto;
+        top: 13%;
+        left: -77.5%;
+
+    }
+    &__subcaption{
+        font-family: 'Montserrat';
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 1.33;
+        z-index: 2;
+        margin-top: 180px;
+    }
+    &__review{
+        width: 100%;
+        margin-bottom: 150px;
+    }
+    &__review-item{
+        margin-top: 95px;
+        transition: .2s ease-in-out transform;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    &__review-num{
+        color: $c-caption;
+        line-height: 1.25;
+        font-size: 47px;
+        font-weight: 700;
+        z-index: 2;
+    }
+    &__review-desc{
+        font-size: 12px;
+    }
+    &__img{
+        bottom: 19.5%;
+        right: -42.5%;
     }
 }
