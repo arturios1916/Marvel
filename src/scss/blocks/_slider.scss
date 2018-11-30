@@ -31,6 +31,9 @@
         padding-right: 35px;
         margin-top: 16px;
         margin-bottom: 25px;
+        &:hover{
+            background-color: $c-primary;
+        }
     }
     &__img{
         display: block;
@@ -68,6 +71,11 @@
     &__semiwrap{
         max-width: 750px;
     }
+    &__arrow{
+        display: none;
+    }
 }
 
-// TODO: HOVER ON BUTTON
+.hamburger-box, .hamburger{
+    display: none;
+}
