@@ -220,3 +220,60 @@
     }
 
 }
+
+@media screen and (max-width: 990px) and (min-width: 576px){
+    .slider{
+        &__smallring{
+            right: 20%;
+        }
+    }
+    .nav{
+        &__link{
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+    .logo{
+        margin: 0;
+    }
+    .polo{
+        &__img{
+            z-index: -1;
+        }
+        &__ring{
+            left: -77.5%;
+        }
+        &__carddesc{
+            max-width: unset;
+        }
+    }
+}
+
+@media screen and (max-width: 800px){
+    .polo__img{
+        display: none;
+    }
+    .polo__review{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .polo__review-item{
+        min-width: 50%;
+        align-items: center;
+    }
+    .footer{
+        &__order{
+            order: -1;
+        }
+        &__item{
+            margin-top: 25px;
+            margin-bottom: 30px;
+
+        }
+    }
+    .social__item{
+        margin-bottom: 30px;
+    }
+}

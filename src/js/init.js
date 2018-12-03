@@ -23,6 +23,13 @@ $(document).ready(function(){
           }
         },
         {
+          breakpoint: 720,
+          settings: {
+            slidesToShow: 1,
+            autoplay: true,
+          }
+        },
+        {
           breakpoint: 576,
           settings: {
             slidesToShow: 1,

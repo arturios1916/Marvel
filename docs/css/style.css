@@ -9231,4 +9231,42 @@ html, body {
   .social {
     margin-bottom: 30px; } }
 
+@media screen and (max-width: 990px) and (min-width: 576px) {
+  .slider__smallring {
+    right: 20%; }
+  .nav__link {
+    padding-left: 15px;
+    padding-right: 15px; }
+  .logo {
+    margin: 0; }
+  .polo__img {
+    z-index: -1; }
+  .polo__ring {
+    left: -77.5%; }
+  .polo__carddesc {
+    max-width: unset; } }
+
+@media screen and (max-width: 800px) {
+  .polo__img {
+    display: none; }
+  .polo__review {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; } }
+
+@media screen and (max-width: 760px) {
+  .polo__review-item {
+    min-width: 50%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .footer__order {
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    order: -1; }
+  .footer__item {
+    margin-top: 25px;
+    margin-bottom: 30px; }
+  .social__item {
+    margin-bottom: 30px; } }
+
 /*# sourceMappingURL=style.css.map */
